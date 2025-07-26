@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- WARQ Logo - Three vertical bars -->
+  <g fill="white">
+    <!-- First bar -->
+    <polygon points="60,40 80,40 60,120 40,120" />
+    <!-- Second bar -->
+    <polygon points="90,40 110,40 90,120 70,120" />
+    <!-- Third bar -->
+    <polygon points="120,40 140,40 120,120 100,120" />
+  </g>
+  <!-- WARQ Text -->
+  <g fill="white" text-anchor="middle" font-family="Arial, sans-serif">
+    <text x="50" y="180" font-size="16">W</text>
+    <text x="85" y="180" font-size="16">A</text>
+    <text x="120" y="180" font-size="16">R</text>
+    <text x="155" y="180" font-size="16">Q</text>
+    <text x="100" y="200" font-size="8">TECHNOLOGIES</text>
+  </g>
+</svg>
