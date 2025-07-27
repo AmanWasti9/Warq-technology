@@ -71,25 +71,31 @@ const Contact = () => {
             Let's Start Building Together
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your ideas into reality? Get in touch with us and let's discuss 
-            how we can help bring your project to life.
+            Ready to transform your ideas into reality? Get in touch with us and
+            let's discuss how we can help bring your project to life.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Info */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-semibold text-foreground mb-8">Get in Touch</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-8">
+              Get in Touch
+            </h3>
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="text-accent mt-1">
-                    {info.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">{info.title}</h4>
-                    <p className="text-foreground font-medium">{info.content}</p>
-                    <p className="text-muted-foreground text-sm">{info.description}</p>
+                  <div className="text-accent mt-1">{info.icon}</div>
+                  <div className="text-left">
+                    <h4 className="font-semibold text-foreground mb-1">
+                      {info.title}
+                    </h4>
+                    <p className="text-foreground font-medium">
+                      {info.content}
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      {info.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -97,7 +103,9 @@ const Contact = () => {
 
             {/* Additional Info */}
             <div className="mt-12 p-6 bg-secondary/50 rounded-lg">
-              <h4 className="font-semibold text-foreground mb-3">Why Choose Warq Technology?</h4>
+              <h4 className="font-semibold text-foreground mb-3">
+                Why Choose Warq Technology?
+              </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>
@@ -125,7 +133,10 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-foreground mb-2 text-left"
+                    >
                       Full Name *
                     </label>
                     <Input
@@ -140,7 +151,10 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-foreground mb-2 text-left"
+                    >
                       Email Address *
                     </label>
                     <Input
@@ -158,7 +172,10 @@ const Contact = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                    <label
+                      htmlFor="company"
+                      className="block text-sm font-medium text-foreground mb-2 text-left"
+                    >
                       Company
                     </label>
                     <Input
@@ -172,7 +189,10 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium text-foreground mb-2 text-left"
+                    >
                       Subject *
                     </label>
                     <Input
@@ -189,7 +209,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-foreground mb-2 text-left"
+                  >
                     Message *
                   </label>
                   <Textarea
@@ -204,9 +227,9 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  size="lg" 
+                <Button
+                  type="submit"
+                  size="lg"
                   className="w-full bg-primary text-primary-foreground hover:bg-accent px-8 py-4"
                 >
                   Send Message

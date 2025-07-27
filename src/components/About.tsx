@@ -30,7 +30,7 @@ const About = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div>
+          <div className='text-left'>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Who We Are
             </h2>

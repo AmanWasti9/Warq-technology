@@ -8,11 +8,13 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import DottedFrame from '@/components/DottedFrame';
+import MagicBar from '@/components/Magicbar';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      {/* <MagicBar /> */}
       <DottedFrame />
       <main className="roots">
         {/* <BusinessCard /> */}

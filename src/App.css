@@ -42,6 +42,9 @@
   color: #888;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
 
 .roots{
   max-width: 1280px;

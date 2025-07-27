@@ -43,10 +43,11 @@ const Footer = () => {
               Warq<span className="text-secondary">Technology</span>
             </h3>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Transforming ideas into powerful digital solutions. We specialize in creating 
-              modern software that drives business growth and delivers exceptional user experiences.
+              Transforming ideas into powerful digital solutions. We specialize
+              in creating modern software that drives business growth and
+              delivers exceptional user experiences.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center text-primary-foreground/80">
@@ -70,8 +71,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.services.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200"
                   >
                     {link.name}
@@ -87,8 +88,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200"
                   >
                     {link.name}
@@ -104,8 +105,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.resources.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200"
                   >
                     {link.name}
@@ -122,16 +123,17 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-2">Stay Updated</h4>
               <p className="text-primary-foreground/80">
-                Subscribe to our newsletter for the latest tech insights and project updates.
+                Subscribe to our newsletter for the latest tech insights and
+                project updates.
               </p>
             </div>
-            <div className="flex gap-2 w-full md:w-auto">
+            <div className="flex flex-col md:flex-row gap-2 w-full md:w-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-2 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60 focus:outline-none focus:border-secondary"
+                className="w-full md:w-64 px-4 py-2 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60 focus:outline-none focus:border-secondary"
               />
-              <Button variant="secondary" className="px-6">
+              <Button variant="secondary" className="px-6 w-full md:w-auto">
                 Subscribe
               </Button>
             </div>
@@ -147,7 +149,7 @@ const Footer = () => {
           <div className="text-primary-foreground/80 text-sm">
             © {currentYear} Warq Technology. All rights reserved.
           </div>
-          
+
           {/* Social Links */}
           <div className="flex items-center gap-4">
             {socialLinks.map((social, index) => (
@@ -164,10 +166,16 @@ const Footer = () => {
 
           {/* Legal Links */}
           <div className="flex items-center gap-6 text-sm">
-            <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200">
+            <a
+              href="#"
+              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200">
+            <a
+              href="#"
+              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200"
+            >
               Terms of Service
             </a>
           </div>
