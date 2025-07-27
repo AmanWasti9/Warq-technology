@@ -60,7 +60,8 @@ const DottedFrame = () => {
   const gridSize = 12;
 
   return (
-    <div className="py-section bg-background">
+    // <div className="py-section bg-background">
+    <div className="relative py-section bg-background overflow-hidden">
       {/* Bottom Left L-shaped frame */}
       <div className="hidden md:block absolute bottom-0 left-0 p-8">
         <div className="grid grid-cols-12 gap-2">
@@ -102,10 +103,10 @@ const DottedFrame = () => {
       </div>
 
       {/* Content */}
-      <div className="z-10 p-0 md:p-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="z-10 py-8 px-8 md:px-28 relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left side - Text content */}
-          <div className="space-y-8 z-10 text-left">
+          <div className="md:space-y-8 space-y-4 z-10 text-left">
             <h1 className="text-5xl md:text-6xl font-extrabold text-foreground leading-tight drop-shadow-lg">
               Empowering Your Vision with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary animate-gradient">
@@ -127,8 +128,8 @@ const DottedFrame = () => {
             </Button>
           </div>
           {/* Right side - Business Card */}
-          <div className="flip-container">
-            <div className="flip-card w-[400px] h-[250px] md:w-[500px] md:h-[300px]">
+          <div className="flip-container flex justify-center md:justify-start w-full">
+            <div className="flip-card w-[280px] h-[180px] md:w-[500px] md:h-[300px]">
               <div className="flip-card-front">
                 <img
                   src={frontCardImage}

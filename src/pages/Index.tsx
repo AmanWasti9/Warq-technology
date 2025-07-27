@@ -13,8 +13,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <DottedFrame />
       <main className="roots">
-        <DottedFrame />
         {/* <BusinessCard /> */}
         <About />
         <Services />
